@@ -5,7 +5,12 @@ const path = require('path')
 
 const article_path = path.join(process.cwd(), '/articles')
 const json_path = path.join(process.cwd(), '/json')
+
 var headers = []
+var algorithms = new Set()
+var scores = new Set()
+var orders = new Set()
+var searchTag = {}
 
 fs.readdir(article_path, function(err, files){
     if (err) throw err
@@ -28,6 +33,16 @@ fs.readdir(article_path, function(err, files){
         fulldata['html'] = doc
 
         metadata['filename'] = jsonFileName
+        if (metadata.competive_programming == true) {
+            if (metadata.algorithms != undefined) {
+                metadata.algorithms.forEach(function(algorithm){
+                    algorithms.add(algorithm)
+                })
+            }
+            scores.add(metadata.score)
+            orders.add(metadata.order)
+        }
+
         headers.push(metadata)        
 
         try {
@@ -38,9 +53,23 @@ fs.readdir(article_path, function(err, files){
         }
     })
 
+    const scoresArray = Array.from(scores).sort()
+    const algorithmsArray = Array.from(algorithms).sort()
+    const ordersArray = Array.from(orders)
+    searchTag["scores"] = scoresArray
+    searchTag["algorithms"] = algorithmsArray
+    searchTag["orders"] = ordersArray
+
     try {
-        const target = path.join(process.cwd(), 'sitemap.json')
+        const target = path.join(process.cwd(), 'articles.json')
         fs.writeFileSync(target,JSON.stringify(headers))
+    }catch(e){
+        console.log(e)
+    }
+
+    try {
+        const target = path.join(process.cwd(), 'searchtag.json')
+        fs.writeFileSync(target,JSON.stringify(searchTag))
     }catch(e){
         console.log(e)
     }

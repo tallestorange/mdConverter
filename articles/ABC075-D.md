@@ -1,8 +1,13 @@
 ---
 title: "ABC075-D Axis-Parallel Rectangle"
-date: 2019-02-23T08:22:39+09:00
-draft: false
-toc: true
+date: 2018-2-23
+competive_programming: true
+score: 400
+algorithms: ["全探索"]
+order: "O(N^5)"
+contest: "ABC"
+difficulty: 2.5
+importance: 4.0
 ---
 
 ## 問題

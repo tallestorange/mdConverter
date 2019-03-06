@@ -1,7 +1,13 @@
 ---
 title: "ABC064-D Insertion"
-date: 2019-02-20T23:48:00+09:00
-draft: false
+date: 2018-2-20
+competive_programming: true
+score: 400
+algorithms: ["貪欲"]
+order: "O(|S|)"
+contest: "ABC"
+difficulty: 2.5
+importance: 3.5
 ---
 
 ## 問題

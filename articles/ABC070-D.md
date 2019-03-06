@@ -1,8 +1,13 @@
 ---
 title: "ABC070-D Transit Tree Path"
-date: 2019-02-22T10:02:37+09:00
-draft: false
-toc: true
+date: 2018-2-22
+competive_programming: true
+score: 400
+algorithms: ["DFS","木構造"]
+order: "O(N)"
+contest: "ABC"
+difficulty: 3.5
+importance: 4.0
 ---
 
 ## 問題

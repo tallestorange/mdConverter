@@ -1,8 +1,13 @@
 ---
 title: "ABC074-D Restoring Road Network"
-date: 2019-02-22T16:19:30+09:00
-draft: false
-toc: true
+date: 2018-2-22
+competive_programming: true
+score: 500
+algorithms: ["ワーシャルフロイド法"]
+order: "O(N^3)"
+contest: "ABC"
+difficulty: 4.0
+importance: 4.0
 ---
 
 ## 問題

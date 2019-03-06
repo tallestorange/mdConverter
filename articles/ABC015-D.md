@@ -1,10 +1,14 @@
-+++
-date = "2018-11-28"
-title = "ABC015-D 高橋君の苦悩"
-tags = ["精進","DP"]
-toc = true
-author = "192"
-+++
+---
+title: "ABC015-D 高橋君の苦悩"
+date: 2018-11-28
+competive_programming: true
+score: 400
+algorithms: ["DP"]
+order: "O(N^3)"
+contest: "ABC"
+difficulty: 4.0
+importance: 4.5
+---
 
 ## 問題
 [ABC015-D](https://beta.atcoder.jp/contests/abc015/tasks/abc015_4)

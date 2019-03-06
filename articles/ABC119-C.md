@@ -1,8 +1,13 @@
 ---
 title: "ABC119-C Synthetic Kadomatsu"
-date: 2019-02-24T23:48:00+09:00
-draft: false
-toc: true
+date: 2019-02-24
+competive_programming: true
+score: 300
+algorithms: ["全探索"]
+order: "O(4^N)"
+contest: "ABC"
+difficulty: 3.5
+importance: 2.5
 ---
 
 ## 問題

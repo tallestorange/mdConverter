@@ -1,8 +1,13 @@
 ---
 title: "ABC065-D Built?"
-date: 2019-02-21T12:54:10+09:00
-draft: false
-toc: true
+date: 2018-2-21
+competive_programming: true
+score: 400
+algorithms: ["UnionFind","最小全域木","木構造"]
+order: "O(NlogN)"
+contest: "ABC"
+difficulty: 3.0
+importance: 4.0
 ---
 
 ## 問題
